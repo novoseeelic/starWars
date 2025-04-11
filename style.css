@@ -1,0 +1,53 @@
+.conteiner {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.title {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.episode {
+    text-align: center;
+}
+
+.episode:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.link:hover {
+    color:darkgray;
+}
+
+.text {
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.back {
+    color: inherit;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.back:hover {
+    color:darkgray;
+}
