@@ -29,14 +29,14 @@ const episodeId = searchParams.get('episodeId');
 if (episodeId) {
   renderPage(
     './episode-details.js', 
-    `https://swapi.dev/api/films/${episodeId}`, 
+    `https://swapi.tech/api/films/${episodeId}`, 
     './style.css'
   );
 }
 else {
   renderPage(
     './episode-list.js', 
-    `https://swapi.dev/api/films`, 
+    `https://swapi.tech/api/films`, 
     './style.css'
   );
 }

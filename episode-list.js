@@ -9,13 +9,13 @@ export function render(data) {
 
   conteiner.append(title);
 
-  for (const episode of data.results){
+  for (const episode of data.result){
     const epi = document.createElement('div');
     epi.classList.add('episode');
     const link = document.createElement('a');
     link.classList.add("link");
-    link.innerText = "Episode " + episode.episode_id + ". " + episode.title;
-    link.href = `?episodeId=${CorrectId(episode.episode_id)}`;
+    link.innerText = "Episode " + episode.properties.episode_id + ". " + episode.properties.title;
+    link.href = `?episodeId=${CorrectId(episode.properties.episode_id)}`;
 
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -23,7 +23,7 @@ export function render(data) {
       conteiner.innerHTML = '';
       renderPage(
         './episode-details.js', 
-        `https://swapi.dev/api/films/${CorrectId(episode.episode_id)}`, 
+        `https://swapi.tech/api/films/${CorrectId(episode.properties.episode_id)}`, 
         './style.css'
       );
     });
